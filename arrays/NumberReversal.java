@@ -6,10 +6,10 @@ public class NumberReversal {
 
     public static void reverseNumber(){
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Digite um número (double): ");
-            double inputNumber = scanner.nextDouble();
+            System.out.print("Digite um número (inteiro): ");
+            int inputNumber = scanner.nextInt();
             
-            String numberString = Double.toString(inputNumber);
+            String numberString = Integer.toString(inputNumber);
             StringBuilder reversedNumber = new StringBuilder();
 
             for (int i = numberString.length() - 1; i >= 0; i--) {
